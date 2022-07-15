@@ -1,0 +1,354 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), 
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff'); 
+    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), 
+    url('../fonts/roboto-v30-latin-700.woff') format('woff'); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+
+img{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+header{
+    padding: 30px 0;
+}
+
+.site-nav {
+    margin-right: 40px;
+}
+.site-nav-list {
+}
+.site-nav-item {
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.site-nav-item:nth-child(4) {
+    margin-right: 0;
+}
+.site-nav-item:hover{
+    border-bottom: 3px solid #333333;
+}
+
+.site-nav-item-link {
+    font-size: 15px;
+    line-height: 150%;
+    color: #333333;
+    opacity: 0.8;
+
+}
+.site-search-input {
+    font-size: 15px;
+    line-height: 150%;
+    color: #666666;  
+    border: 0;  
+    border-bottom: 1px solid #333333;
+}
+
+
+/* hero section start */
+
+.hero-section {
+    padding-top: 170px;
+    padding-bottom: 185px;
+    background-image: url("../images/apple-watch.jpg");
+    background-size: 587px 565px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 625px) bottom;
+}
+.hero-section-wrapper {
+    width: 490px;
+}
+.hero-section-wrapper-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    
+}
+.hero-section-wrapper-desc {
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #888888;
+}
+.hero-section-wrapper-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 12px 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+}
+
+.hero-section-wrapper-link:hover{
+    background-color: #C9514C;
+}
+
+/* features section start */
+.features-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.features-section-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+
+.know-your-run{
+    width: 290px;
+}
+
+.run-in-good{
+    width: 268px;
+}
+.just-do-it{
+    width: 289px;
+}
+
+.features-section-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #222222;
+
+}
+.features-section-item-desc {
+    font-size: 15px;
+    line-height: 160%;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.oval{
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.features-section-item-oval {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    background-color: #DDDDDD;
+}
+.features-section-lern-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #EA625C;
+}
+
+.features-section-lern-more::before{
+    width: 40px;
+    height: 3px;
+    margin-right: 10px;
+    background-image: url("../images/Line.png");
+    -webkit-transition: all 0.8s ease ;
+    -o-transition: all 0.8s ease ;
+    transition: all 0.8s ease ;
+    content: "";
+
+}
+
+.features-section-lern-more:hover::before{
+    width: 60px;
+}
+
+/* features section end */
+
+/* buy section start */
+.buy-section{
+    padding: 70px 0;
+}
+.buy-section-wrapper {
+    width: 490px;
+}
+.buy-section-wrapper-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    
+}
+.buy-section-wrapper-desc {
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #888888;
+}
+.buy-section-wrapper-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 12px 90px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.buy-section-wrapper-link:hover{
+    background-color: #C9514C;
+}
+
+/* buy section end */
+
+
+.control-of-section {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    background-image: url("../images/runners.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.control-of-section-wrapper {
+    display: block;
+    width: 490px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.control-of-section-wrapper-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+.control-of-section-wrapper-desc {
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #888888;
+}
+.control-of-section-wrapper-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 12px 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+}
+
+.control-of-section-wrapper-link:hover{
+    background: #C9514C;    
+}
